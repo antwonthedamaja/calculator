@@ -25,30 +25,31 @@ body {
 }
 
 #panel {
-    padding: .5rem;
+    padding: .4rem;
     display: flex;
     justify-content: space-between;
     flex: 1;
 }
 
 #buttons {
+    padding-right: .4rem;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    flex: 1;
 }
 
 #buttons div {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 7.5rem;
-    height: 6rem;
+    flex: 1 0 7.5rem;
+    margin: .1rem;
 }
 
 #buttons #zero {
-    width: 15.25rem;
+    flex: 2 0 15rem;
 }
 
 #sidebar {
@@ -56,12 +57,13 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: .2rem;
 }
 
 #sidebar div {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5rem;
-    width: 5rem;
+    width: 5.25rem;
+    flex: 1;
 }
