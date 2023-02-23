@@ -26,16 +26,34 @@ body {
 
 #panel {
     display: flex;
+    justify-content: space-between;
     flex: 1;
 }
 
-#numbers {
+#buttons {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+#buttons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.5rem;
+    height: 5rem;
 }
 
 #sidebar {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
+    justify-content: space-around;
+    align-items: center;
+}
+#sidebar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
 }
