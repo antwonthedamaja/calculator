@@ -1,18 +1,41 @@
 body {
-    background-color: rgba(72, 68, 68, 0.508);
+    background-color: rgb(42, 42, 42);
+    margin: 0;
+    padding: 0;
 }
 
 #container {
     display: flex;
+    height: 100vh;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
 
+#calculator {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 40rem;
+}
+
+#display {
+    height: 5rem;
+    width: auto;
+}
+
 #panel {
     display: flex;
+    flex: 1;
+}
+
+#numbers {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #sidebar {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
 }
