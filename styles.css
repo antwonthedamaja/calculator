@@ -1,0 +1,18 @@
+body {
+    background-color: rgba(72, 68, 68, 0.508);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel {
+    display: flex;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+}
