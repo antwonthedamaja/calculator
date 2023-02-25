@@ -15,6 +15,10 @@ buttons.forEach(button => {
             input1 = undefined;
             input2 = undefined;
             operand = undefined;
+        } else if (button.id === 'lights') { //party time, do later
+            alert('not implemented yet, sorry')
+        } else if (button.id === 'music') { //party time, do later
+            alert('not implemented yet, sorry')
         } else if (button.id === 'equals' && operand && input2 !== undefined) { //click equals with operand
             operate();
             operand = undefined;
