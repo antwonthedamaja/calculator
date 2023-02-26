@@ -39,12 +39,8 @@ buttons.forEach(button => {
         } else if (!operand) { //click a number/decimal point without an operand
             inputDisplay === undefined ? inputDisplay = button.textContent : inputDisplay += button.textContent;
             display.textContent = inputDisplay;
-        } else if (input2 === undefined) { //click a number/decimal after 1st operand, 1st iteration only
-            input2 = button.textContent;
-            inputDisplay += button.textContent;
-            display.textContent = inputDisplay;
-        } else { //click a number/decimal after 1st operand
-            input2 += button.textContent;
+        } else { //click a number/decimal after 1st operand, 1st iteration only
+            input2 === undefined ? input2 = button.textContent : input2 += button.textContent;
             inputDisplay += button.textContent;
             display.textContent = inputDisplay;
         }
