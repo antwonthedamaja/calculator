@@ -10,7 +10,7 @@ let operand;
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         if (button.id === 'clear') { //clear
-            display.textContent = "000000";
+            display.textContent = "0.000000";
             inputDisplay = undefined;
             input1 = undefined;
             input2 = undefined;
@@ -53,17 +53,22 @@ buttons.forEach(button => {
 
 function operate() {
     let divide0;
+    let displayStore;
     if (operand === "add") {
-        inputDisplay = parseFloat(input1) + parseFloat(input2);
+        displayStore = parseFloat(input1) + parseFloat(input2);
+        inputDisplay = displayStore.toFixed(6);
     } else if (operand === "subtract") {
-        inputDisplay = parseFloat(input1) - parseFloat(input2);
+        displayStore = parseFloat(input1) - parseFloat(input2);
+        inputDisplay = displayStore.toFixed(6);
     } else if (operand === "multiply") {
-        inputDisplay = parseFloat(input1) * parseFloat(input2);
+        displayStore = parseFloat(input1) * parseFloat(input2);
+        inputDisplay = displayStore.toFixed(6);
     } else if (operand === "divide" && input2 === '0') {
         display.textContent = "NICE TRY!";
         divide0 = true;
     } else {
-        inputDisplay = parseFloat(input1) / parseFloat(input2);
+        displayStore = parseFloat(input1) / parseFloat(input2);
+        inputDisplay = displayStore.toFixed(6);
     }
 
     if (!divide0) {
